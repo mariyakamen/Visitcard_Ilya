@@ -1,0 +1,522 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2d2c41;
+    color: #ffffff;
+    font-family: 'Avenir Next', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    width: 100px;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    left: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: black; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: green; /* Add a dark-grey background on hover */
+}
+
+.site-header { background-color:#b2b6a7; margin: 5%; }
+
+strong {
+    font-size: 20px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.article-header {
+    text-align: start;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    position: relative;
+    height: 28px;
+}
+
+
+.article-header::after {
+    content: "";
+    background-color: white;
+    position: absolute;
+    opacity: 0.4;
+    top: 26px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+p a {
+    color: #ffffff;
+    font-style: italic;
+}
+
+nav a {
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+nav a:first-child { margin: 0 4px 0 0; }
+
+main {
+    margin: 0 5%;
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.intro {
+    display: flex;
+    font-size: 22px;
+    line-height: 1.4;
+    margin: 2em auto 0 auto;
+    padding: 0;
+    width: 950px;
+}
+
+.intro h1 {
+    font-size: 1em;
+    margin: 10px 0 0 0; }
+
+.block-img img {
+    margin-left: 30px;
+    margin-bottom: 100px;
+    width: auto;
+    max-width: 470px;
+    max-height: 400px;
+    border: 2px solid #ffffff;
+}
+
+.goals {
+    text-decoration: line-through;
+}
+
+.card-img {
+    margin-right: auto;
+    margin-left: auto;
+    height: 50px;
+    width: 50px;
+}
+
+.references {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 69px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+    width: 1170px;
+    padding: 0 15px 0 15px;
+}
+
+.social-widgets {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.socials {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.social-widgets, a{
+    text-decoration: none;
+
+}
+
+.socials-item {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.socials-link {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    width: 35px;
+    height: 35px;
+
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    background-position: center;
+}
+
+.socials-link-twitter {
+    background-image: url("https://webstockreview.net/images/twitter-white-png-1.jpg");
+}
+
+.socials-link-git {
+    background-image: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png");
+}
+
+.socials-link-facebook {
+    background-image: url("https://www.pngitem.com/pimgs/m/33-336495_pic-of-facebook-icon-white-facebook-vector-png.png");
+}
+
+.socials-link-email {
+    background-image: url("https://www.pinclipart.com/picdir/middle/76-765632_further-studies-at-florida-state-university-tallahassee-grey.png");
+}
+
+
+.socials-link-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.my-projects {
+    display: flex;
+    flex-direction: column;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards {
+    display: flex;
+}
+
+.h2 {
+    display: inline;
+}
+
+.card {
+    box-sizing: border-box;
+    background-color: #52415C;
+    text-align: start;
+    width: 420px;
+    margin: 0 10px 0 10px;
+    padding: 15px 30px;
+    line-height: 1.4;
+}
+
+.card:nth-child(2n+1) {
+    background-color: #1B412F;
+}
+
+.courses {
+    width: 950px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.course {
+    display: flex;
+}
+
+.course:nth-child(n+2) {
+    margin-top: 70px;
+}
+
+.course-preview {
+    box-sizing: border-box;
+    width: 450px;
+    max-height: 275px;
+    padding: 5px;
+    background-color: #F0FFFF;
+}
+
+.course-img {
+    max-width: 420px;
+    min-width: 420px;
+    min-height: 265px;
+    max-height: 265px;
+
+}
+
+.course-info {
+    box-sizing: border-box;
+    width: 660px;
+    padding: 0 60px;
+}
+
+.body {
+    margin: 0;
+}
+
+.about {
+    font-size: 14px;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 5px;
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.about__header {
+    width: 25%;
+    padding-right: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 100px;
+    margin-top: 30px;
+
+}
+
+.about__photo {
+    max-width: 100%;
+}
+
+.about__title {
+    margin: 15px 0 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.about__body {
+    margin-top: 10px;
+    width: 75%;
+}
+
+.about__info-item {
+    margin-bottom: 10px;
+}
+
+.about__info-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.about__info-param {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.about__skills {
+    margin-top: 0;
+}
+
+.about__skill {
+    margin-bottom: 30px;
+}
+
+.about__skill:last-of-type {
+    margin-bottom: 0;
+}
+
+.about__skill-name {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about__skill-progress {
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+.about__skill-value {
+    display: none;
+}
+
+.about__skill-bar {
+    height: 28px;
+    border-radius: 5px;
+    background-color: #9370DB;
+    background-image: linear-gradient(to left, indigo , pink);
+}
+
+.about__skill-captions {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.about__skill-caption {
+    width: 24%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+
+    padding: 50px 0;
+    padding-top: 0;
+}
+
+.timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
+}
+
+.timeline ul li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: #52415C;
+}
+
+.timeline ul li div::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+    left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #52415C transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+    left: -465px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #52415C;
+}
+
+time {
+    display: block;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.timeline-card h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+    transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+    background: white;
+}
+
+.timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+    transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+    transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+    .timeline ul li div {
+        width: 250px;
+    }
+    .timeline ul li:nth-child(even) div {
+        left: -289px;
+        /*250+45-6*/
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .timeline ul li {
+        margin-left: 20px;
+    }
+    .timeline ul li div {
+        width: calc(100vw - 91px);
+    }
+    .timeline ul li:nth-child(even) div {
+        left: 45px;
+    }
+    .timeline ul li:nth-child(even) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #1B412F transparent transparent;
+    }
+}
+
+
+footer {
+    background-color: #000000;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 5%;
+}
+
