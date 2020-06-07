@@ -1,12 +1,12 @@
 proj_name = "Visitcard_Ilya"
 
-with open(f"web/{proj_name}.html") as f:
+with open(f"src/web/{proj_name}.html") as f:
     html = f.read()
 
-with open(f"web/{proj_name}.css") as f:
+with open(f"src/web/{proj_name}.css") as f:
     css = f.read()
 
-with open(f"web/{proj_name}.js") as f:
+with open(f"src/web/{proj_name}.js") as f:
     js = f.read()
 
 

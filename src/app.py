@@ -9,4 +9,5 @@ app = Flask(__name__)
 def hello_world():
     return blob
 
-app.run(host='0.0.0.0')
+def launch():
+    app.run(host='0.0.0.0')
