@@ -71,7 +71,9 @@ p a {
     color: #ffffff;
     font-style: italic;
 }
-
+nav {
+    background-color: #2d2c41;
+}
 nav a {
     color: #ffffff;
     display: inline-block;
