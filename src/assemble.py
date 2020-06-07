@@ -17,5 +17,5 @@ from bs4 import BeautifulSoup
 
 bs = BeautifulSoup(html, features="html.parser")
 bs.head.insert(0, BeautifulSoup(css_tag, features="html.parser") )
-# bs.body.insert(0, BeautifulSoup(js_tag, features="html.parser") )
+bs.body.insert(-1, BeautifulSoup(js_tag, features="html.parser") )
 blob = str(bs)
